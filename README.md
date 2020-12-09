@@ -1,4 +1,4 @@
-# Titus ArchMatic Installer Script
+# Titus ArchMatic Installer Script (GNOME)
 
 <img src="https://i.imgur.com/Yn29sze.png" />
 
