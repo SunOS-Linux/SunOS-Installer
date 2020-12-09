@@ -22,7 +22,7 @@ PKGS=(
     'cronie'                # cron jobs
     'curl'                  # Remote content retrieval
     'file-roller'           # Archive utility
-    'gtop'                  # System monitoring via terminal
+    'htop'                  # System monitoring via terminal
     'gufw'                  # Firewall manager
     'hardinfo'              # Hardware info app
     'htop'                  # Process viewer
@@ -92,10 +92,8 @@ PKGS=(
 
     # MEDIA ---------------------------------------------------------------
 
-    'kdenlive'              # Movie Render
     'obs-studio'            # Record your screen
-    'celluloid'             # Video player
-    
+  
     # GRAPHICS AND DESIGN -------------------------------------------------
 
     'gcolor2'               # Colorpicker
