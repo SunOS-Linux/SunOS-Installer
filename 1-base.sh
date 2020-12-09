@@ -22,17 +22,7 @@ PKGS=(
         'mesa'                  # Open source version of OpenGL
 
     # --- Setup Desktop
-        'gnome'                 # Gnome Desktop
-        'xfce4-power-manager'   # Power Manager 
-        'rofi'                  # Menu System
-        'picom'                 # Translucent Windows
-        'xclip'                 # System Clipboard
-        'gnome-polkit'          # Elevate Applications
-        'lxappearance'          # Set System Themes
-
-    # --- Login Display Manager
-        'lightdm'                   # Base Login Manager
-        'lightdm-webkit2-greeter'   # Framework for Awesome Login Themes
+        'gnome'                 # Gnome Desktop and other goodies
 
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
