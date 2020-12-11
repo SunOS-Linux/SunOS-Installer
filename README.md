@@ -8,16 +8,16 @@ This README contains the steps I do to install and configure a fully-functional 
 
 ## Setup Boot and Arch ISO on USB key
 
-First, setup the boot USB, boot arch live iso, and run the `preinstall.sh` from terminal. 
+First, setup the boot USB, boot arch live iso, and run the `preinstall.sh` from terminal sinc Sun/OS is based from Arch Linux.
 
 ### Arch Live ISO (Pre-Install)
 
 This step installs arch to your hard drive. *IT WILL FORMAT THE DISK*
 
 ```bash
-wget https://raw.githubusercontent.com/ChrisTitusTech/ArchMatic/master/preinstall.sh
+git clone https://github.com/Server2356/Sun-OS-Installer.git
 sh preinstall.sh
-
+and then run the follwoing commands below and create (vim arch.conf)
 ```
 
 ### Sun/OS First Boot
