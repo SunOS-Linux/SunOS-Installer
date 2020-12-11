@@ -6,11 +6,11 @@ This README contains the steps to do the install and configure a fully-functiona
 
 ---
 
-## Setup Boot and Sun/OS-archiso on USB key
+## 1. Setup Boot and Sun/OS-archiso on USB key
 
-First, setup the boot USB, boot arch live iso, and run the `preinstall.sh` from terminal since Sun/OS is based from Arch Linux.
+First, setup the boot USB, boot Sun/OS-archiso live usb, and run the `preinstall.sh` from terminal since Sun/OS is based from Arch Linux.
 
-### Arch Live ISO (Pre-Install)
+### 2. Arch Live ISO (Pre-Install)
 
 This step installs Sun/OS to your hard drive. *IT WILL FORMAT THE DISK*
 
@@ -20,7 +20,7 @@ sh preinstall.sh
 and then run the follwoing commands below and create (vim arch.conf)
 ```
 
-### Sun/OS First Boot
+### 3. Sun/OS - Install internals of Sun/OS and then reboot
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
@@ -32,7 +32,7 @@ cd ArchMatic
 ./3-software-aur.sh
 ./9-post-setup.sh
 ```
-### Arch.conf
+### 2. Create Arch.conf in /boot/loader/entries
 
 As I mentioned before, create a new Vim file called Arch.conf and type the following:
 
@@ -46,13 +46,13 @@ options root="UUID="/dev/sd(x) UUID goes here with the quotations" rw
 
 ### System Description
 
-To boot I use `systemd` because it's minimalist, comes built-in, and since the Linux kernel has an EFI image, all we need is a way to execute it.
+To boot use `systemd` because it's minimalist, comes built-in, and since the Linux kernel has an EFI image, all we need is a way to execute it.
 
-I also install the LTS Kernel along side the rolling one, and configure my bootloader to offer both as a choice during startup. This enables me to switch kernels in the event of a problem with the rolling one.
+Also install the LTS Kernel along side the rolling one, and configure the bootloader to offer both as a choice during startup. This enables me to switch kernels in the event of a problem with the rolling one.
 
 ### Troubleshooting Arch Linux
 
-__[Arch Linux Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
+__[Arch Linux and Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
 
 #### No Wifi
 
