@@ -8,7 +8,7 @@ This README contains the steps I do to install and configure a fully-functional 
 
 ## Setup Boot and Arch ISO on USB key
 
-First, setup the boot USB, boot arch live iso, and run the `preinstall.sh` from terminal sinc Sun/OS is based from Arch Linux.
+First, setup the boot USB, boot arch live iso, and run the `preinstall.sh` from terminal since Sun/OS is based from Arch Linux.
 
 ### Arch Live ISO (Pre-Install)
 
