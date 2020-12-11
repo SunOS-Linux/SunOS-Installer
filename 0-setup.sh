@@ -54,7 +54,7 @@ localectl --no-ask-password set-locale LANG="en_US.UTF-8" LC_COLLATE="" LC_TIME=
 localectl --no-ask-password set-keymap us
 
 # Hostname
-hostnamectl --no-ask-password set-hostname $hostname
+hostnamectl --no-ask-password set-hostname $SunOS
 
 # Add sudo no password rights
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers
