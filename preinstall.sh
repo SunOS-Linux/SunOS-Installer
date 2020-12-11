@@ -4,7 +4,7 @@
 #     /_\  _ _ __| |_ |  \/  |__ _| |_(_)__
 #    / _ \| '_/ _| ' \| |\/| / _` |  _| / _|
 #   /_/ \_\_| \__|_||_|_|  |_\__,_|\__|_\__|
-#  Arch Linux Post Install Setup and Config
+#  Sun/OS Installer and Post-Installer for archiso and Sun/OS
 #-------------------------------------------------------------------------
 
 echo "-------------------------------------------------"
@@ -71,7 +71,7 @@ echo "-- Bootloader Systemd Installation  --"
 echo "--------------------------------------"
 bootctl install
 cat <<EOF > /boot/loader/entries/arch.conf
-title Arch Linux  
+title Sun/OS  
 linux /vmlinuz-linux  
 initrd  /initramfs-linux.img  
 options root=${DISK}1 rw
