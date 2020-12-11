@@ -1,4 +1,4 @@
-# ArchMatic Installer Script (GNOME)
+# Sun/OS Installer Script (GNOME)
 
 <img src="https://i.imgur.com/Yn29sze.png" />
 
@@ -17,10 +17,10 @@ This step installs arch to your hard drive. *IT WILL FORMAT THE DISK*
 ```bash
 wget https://raw.githubusercontent.com/ChrisTitusTech/ArchMatic/master/preinstall.sh
 sh preinstall.sh
-reboot
+
 ```
 
-### Arch Linux First Boot
+### Sun/OS First Boot
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
@@ -38,7 +38,6 @@ cd ArchMatic
 ---
 
 ### System Description
-This runs Awesome Window Manager with the base configuration from the Material-Awesome project <https://github.com/ChrisTitusTech/material-awesome>.
 
 To boot I use `systemd` because it's minimalist, comes built-in, and since the Linux kernel has an EFI image, all we need is a way to execute it.
 
