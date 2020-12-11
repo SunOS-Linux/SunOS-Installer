@@ -40,9 +40,8 @@ As I mentioned before, create a new Vim file called Arch.conf and type the follo
 Title Sun/OS
 linux /vmlinuz-linux
 initrd /initramfs-linux-.img
-options root="UUID="/dev/sd(x) UUID goes" rw```
-
-
+options root="UUID="/dev/sd(x) UUID goes" rw
+```
 ---
 
 ### System Description
