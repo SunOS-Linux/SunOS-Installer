@@ -1,4 +1,4 @@
-# Sun/OS Installer Script (GNOME) v1.0.5
+# Sun/OS Installer Script (GNOME) v1.2.0
 
 <img src="https://i.imgur.com/Yn29sze.png" />
 
