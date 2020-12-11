@@ -33,7 +33,6 @@ cd ArchMatic
 ./9-post-setup.sh
 ```
 
-### Don't just run these scripts. Examine them. Customize them. Create your own versions.
 
 ---
 
