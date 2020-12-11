@@ -4,7 +4,7 @@
 #     /_\  _ _ __| |_ |  \/  |__ _| |_(_)__
 #    / _ \| '_/ _| ' \| |\/| / _` |  _| / _|
 #   /_/ \_\_| \__|_||_|_|  |_\__,_|\__|_\__|
-#  Arch Linux Post Install Setup and Config
+#  Sun/OS Installer and Post-Installer for archios and Sun/OS
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
