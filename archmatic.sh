@@ -19,7 +19,7 @@ if [ ! -f /usr/bin/pacman ]; then
         pacman -Sy && sudo pacman -Syyy && pacman -S lsb-release --noconfirm --needed &>/dev/null
         os=$(lsb_release -ds | sed 's/"//g')
 
-if [ "${os}" != "Arch Linux" ]; then
+if [ "${os}" != "Arch Linux or Sun/OS" ]; then
     echo "You must be using Arch Linux to execute this script."
     exit 1
 fi
