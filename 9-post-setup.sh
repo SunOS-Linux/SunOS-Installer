@@ -60,15 +60,6 @@ sudo sed -i 's|initramfs-linux.img|initramfs-linux-lts.img|g' /boot/loader/entri
 
 # ------------------------------------------------------------------------
 
-echo -e "\nConfiguring vconsole.conf to set a larger font for login shell"
-
-sudo cat <<EOF > /etc/vconsole.conf
-KEYMAP=us
-FONT=ter-v32b
-EOF
-
-# ------------------------------------------------------------------------
-
 echo -e "\nDisabling buggy cursor inheritance"
 
 # When you boot with multiple monitors the cursor can look huge. This fixes it.
