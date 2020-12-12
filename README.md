@@ -62,7 +62,7 @@ To boot use `systemd` because it's minimalist, comes built-in, and since the Lin
 
 Also install the LTS Kernel along side the rolling one, and configure the bootloader to offer both as a choice during startup. This enables me to switch kernels in the event of a problem with the rolling one.
 
-### Troubleshooting Arch Linux
+### Troubleshooting Arch Linux and Sun/OS
 
 __[Arch Linux and Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
 
