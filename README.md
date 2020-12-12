@@ -1,6 +1,6 @@
 # Sun/OS Installer Script (GNOME) v1.2.0
 
-<img src="https://i.imgur.com/Yn29sze.png" />
+<img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
 This README contains the steps to do the install and configure a fully-functional Sun-OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities. The shell scripts in this repo allow the entire process to be automated.)
 
