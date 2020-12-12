@@ -20,7 +20,7 @@ sh preinstall.sh
 and then run the follwoing commands below and create (vim arch.conf)
 ```
 
-### 3. Sun/OS - Install internals of Sun/OS and then reboot
+### 3. Sun/OS - Install internals of Sun/OS
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
@@ -42,6 +42,18 @@ linux /vmlinuz-linux
 initrd /initramfs-linux-.img
 options root="UUID="/dev/sd(x) UUID goes here with the quotations" rw
 ```
+### 3. Enablining the GNOME Desktop and starting it
+```bash
+systemctl enable gdm.service
+exit
+reboot
+```
+Once you done that, login to your new installation of Sun/OS and type the following command:
+```bash
+systemctl start gdm.service
+```
+And follow the instruction on setup at the following link
+
 ---
 
 ### System Description
