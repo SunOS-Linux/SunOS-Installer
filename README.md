@@ -62,6 +62,7 @@ To boot use `systemd` because it's minimalist, comes built-in, and since the Lin
 
 Also install the LTS Kernel* along side the rolling one, and configure the bootloader to offer both as a choice during startup. This enables me to switch kernels in the event of a problem with the rolling one.
 *Update to the latest kernel --> Linux Kernel 5.10.1 LTS ---> Now supported on Sun/OS 2021.01.01
+=======
 ### Troubleshooting Arch Linux and Sun/OS
 
 __[Arch Linux and Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
@@ -78,4 +79,4 @@ At the terminal, run:
 ```bash
 xinit
 ```
-(C) 2021 Abdon Morales
+(C) 2021 Abdon Morales Jr
