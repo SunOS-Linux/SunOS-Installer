@@ -78,3 +78,4 @@ At the terminal, run:
 ```bash
 xinit
 ```
+(C) 2020 Abdon Morales Jr
