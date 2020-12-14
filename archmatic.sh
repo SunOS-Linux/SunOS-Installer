@@ -1,17 +1,11 @@
 #!/usr/bin/env bash
-# Created by Liam Powell (gfelipe099)
-# A compilation of all the files from ArchMatic's repository
-# Made for ChrisTitusTech
-
+# (C) 2021 Abdon Morales Jr
+# (C) 2021 Andrew Riefenstahl
 #-------------------------------------------------------------------------
-#      _          _    __  __      _   _
-#     /_\  _ _ __| |_ |  \/  |__ _| |_(_)__
-#    / _ \| '_/ _| ' \| |\/| / _` |  _| / _|
-#   /_/ \_\_| \__|_||_|_|  |_\__,_|\__|_\__|
-#  Arch Linux Post Install Setup and Config
+#  Sun/OS Installer and Post-Installer v1.5 ---> Sun/OS 2021.01.01
 #-------------------------------------------------------------------------
 
-# Verify Arch Linux is running
+# Verify Arch Linux or Sun/OS is running
 if [ ! -f /usr/bin/pacman ]; then
     echo "Pacman Package Manager was not found in this system, execution aborted."
     exit
@@ -20,7 +14,7 @@ if [ ! -f /usr/bin/pacman ]; then
         os=$(lsb_release -ds | sed 's/"//g')
 
 if [ "${os}" != "Arch Linux or Sun/OS" ]; then
-    echo "You must be using Arch Linux to execute this script."
+    echo "You must be using Sun/OS-arch to execute this script."
     exit 1
 fi
 
@@ -93,14 +87,7 @@ function baseSetup {
             'mesa'                  # Open source version of OpenGL
 
         # --- Setup Desktop
-            'awesome'               # Awesome Desktop
-            'xfce4-power-manager'   # Power Manager 
-            'rofi'                  # Menu System
-            'picom'                 # Translucent Windows
-            'xclip'                 # System Clipboard
-            'gnome-polkit'          # Elevate Applications
-            'lxappearance'          # Set System Themes
-
+            'gnome'               # GNOME Desktop
         # --- Login Display Manager
             'lightdm'                   # Base Login Manager
             'lightdm-webkit2-greeter'   # Framework for Awesome Login Themes
@@ -147,7 +134,7 @@ function softwareSetup {
 
         # SYSTEM --------------------------------------------------------------
 
-        'linux-lts'             # Long term support kernel
+        'linux'             # Long term support kernel
 
         # TERMINAL UTILITIES --------------------------------------------------
 
@@ -248,7 +235,6 @@ function softwareSetup {
 
     # UTILITIES -----------------------------------------------------------
 
-    'i3lock-fancy'              # Screen locker
     'synology-drive'            # Synology Drive
     'freeoffice'                # Office Alternative
     
@@ -318,7 +304,7 @@ fi' > ${HOME}/.xinitrc
     # ------------------------------------------------------------------------
 
     echo
-    echo "Configuring LTS Kernel as a secondary boot option"
+    echo "Configuring Linux LTS Kernel as a secondary boot option"
 
     sudo cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-lts.conf
     sudo sed -i 's|Arch Linux|Arch Linux LTS Kernel|g' /boot/loader/entries/arch-lts.conf
@@ -417,4 +403,4 @@ sleep 5
 clear
 postInstallation
 clear
-echo -n "\n\n\nArchMatic finished the installation and configuration of the system!\n\n\n"
+echo -n "\n\n\n Sun/OS is now installed... Please reboot your system!\n\n\n"
