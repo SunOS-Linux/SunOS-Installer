@@ -1,8 +1,8 @@
-# Sun/OS Installer Script (GNOME) v1.5 (Beta)
+# Sun/OS Installer Script (GNOME) v1.5
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
-This README contains the steps to do the install and configure a fully-functional Sun-OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities. The shell scripts in this repo allow the entire process to be automated.)
+This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities. The shell scripts in this repo allow the entire process to be automated.) Sun/OS 2021.01.01 (Codename Waco) will be avaliable on December 30, 2020
 
 ---
 
