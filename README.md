@@ -79,4 +79,10 @@ At the terminal, run:
 ```bash
 xinit
 ```
+#### Updating
+To update the system, run the command below in order for the system to update
+```bash
+sudo pacman -Syu
+```
+Press y and press enter, and the update should install. Once the update is finished reboot your system
 (C) 2021 Abdon Morales Jr
