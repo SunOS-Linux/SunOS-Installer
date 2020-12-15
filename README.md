@@ -24,8 +24,7 @@ and then run the follwoing commands below and create (vim arch.conf)
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
-git clone https://github.com/ChrisTitusTech/ArchMatic
-cd ArchMatic
+git clone https://github.com/Server2356/Sun-OS-Installer.gitcd ArchMatic
 ./0-setup.sh
 ./1-base.sh
 ./2-software-pacman.sh
