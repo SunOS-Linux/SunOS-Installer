@@ -83,6 +83,6 @@ To update the system, run the command below in order for the system to update
 ```bash
 sudo pacman -Syu
 ```
-Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update.
+Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating!
 
 (C) 2021 Abdon Morales Jr
