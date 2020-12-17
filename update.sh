@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+
 #Updating system to latest release --->Update script with the new one once the Git repo is updates
 
 echo "Updating Sun/OS to latest version"
@@ -21,10 +21,8 @@ sudo pacman -Syu
 
 echo "Now updated to Sun/OS v2021.01.01 (Waco)!"
 
-echo "System now rebooting to apply update"
-echo
-echo
-echo
-echo
+echo "Reloading Sun/OS"
 
-sudo reboot
+echo "Done!"
+echo "(C) 2021 Abdon Morales Jr - Andrew Riefenstahl"
+exit
