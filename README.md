@@ -1,4 +1,4 @@
-# Sun/OS Installer Script (GNOME) v1.5
+# Sun/OS Installer Script (GNOME) v1.5.2
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
@@ -31,7 +31,13 @@ git clone https://github.com/Server2356/Sun-OS-Installer.gitcd ArchMatic
 ./3-software-aur.sh
 ./9-post-setup.sh
 ```
-### 2. Create Arch.conf in /boot/loader/entries
+### 4. Creating root password
+```bash
+passwd root
+password:"enter your password"
+Confirm password:"Enter your password"
+```
+### 5. Create Arch.conf in /boot/loader/entries
 
 As I mentioned before, create a new Vim file called Arch.conf and type the following:
 
@@ -41,7 +47,7 @@ linux /vmlinuz-linux
 initrd /initramfs-linux-.img
 options root="UUID=/dev/sd(x) UUID goes here with the quotations" rw
 ```
-### 3. Enablining the GNOME Desktop and starting it
+### 6. Enablining the GNOME Desktop and starting it
 ```bash
 systemctl enable gdm.service
 exit
