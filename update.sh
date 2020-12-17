@@ -19,6 +19,8 @@ sudo pacman -Syy
 
 sudo pacman -Syu
 
+echo "Now updated to Sun/OS v2021.01.01 (Waco)!"
+
 echo "System now rebooting to apply update"
 echo
 echo
