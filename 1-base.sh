@@ -19,6 +19,7 @@ PKGS=(
 
     # --- Setup Desktop
         'gnome'                 # Gnome Desktop and other goodies
+        'gnome-tweaks'          # Gnome Tweaks for the GNOME Desktop
 
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
