@@ -1,4 +1,4 @@
-# Sun/OS Installer Script (GNOME) v1.5.2 R2
+# Sun/OS Installer Script (GNOME) v2.0.0
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
