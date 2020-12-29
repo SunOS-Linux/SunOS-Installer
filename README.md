@@ -42,9 +42,9 @@ Confirm password:"Enter your password"
 As I mentioned before, create a new Vim file called Arch.conf and type the following:
 
 ```bash
-Title Sun/OS
+Title Arch Linux
 linux /vmlinuz-linux
-initrd /initramfs-linux-.img
+initrd /initramfs-linux.img
 options root="UUID=/dev/sd(x) UUID goes here with the quotations" rw
 ```
 ### 6. Enablining the GNOME Desktop and starting it
