@@ -2,7 +2,7 @@
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
-This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities. The shell scripts in this repo allow the entire process to be automated.) Sun/OS 2021.01.01 (Codename Waco) will be avaliable on January 1, 2021...---> UEFI is currently supported on the installer!
+This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities (FOR Advance Users...read the README (Advance) file. The shell scripts in this repo allow the entire process to be automated.) Sun/OS 2021.01.01 (Codename Waco) will be avaliable on January 1, 2021...---> UEFI is currently supported on the installer!
 
 ---
 
