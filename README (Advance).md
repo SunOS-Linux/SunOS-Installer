@@ -1,4 +1,4 @@
-# Installing Arch Linux on a LUKS Encrypted Drive using LVM booting with UEFI
+# Installing Sun/OS on a LUKS Encrypted Drive using LVM booting with UEFI
 
 This document describes my preferred way to install Arch Linux.
 
@@ -8,15 +8,12 @@ This document describes my preferred way to install Arch Linux.
 
 * __UEFI__ is the modern replacement for Legacy BIOS.
 
-If you are curious as to why I use Arch you can read __[Why Arch Linux](https://github.com/rickellis/Arch-Linux-Install-Guide/blob/master/why-arch.md)__.
 
----
-
-Before you begin you must prepare your installation media and make sure your BIOS is configured correctly:
+Before you begin you must prepare your installation media and make sure your BIOS is configured correctly and compatible:
 
 ## Prepare Installation Media
 
-[Download](https://www.archlinux.org/download/) the Arch Linux ISO and create a bootable USB drive. The simplest way to create bootable media on Linux is using the dd command:
+[Download]The Sun/OS ISO from GitLab and create a bootable USB drive. The simplest way to create bootable media on Linux or Mac OS (Using the terminal) is using the dd command:
 
     $   sudo dd bs=4M if=/path_to_arch_.iso of=/dev/sd* && sync
 
@@ -54,17 +51,16 @@ Drive nodes might be called "sda", "sdb", etc., or they might be something compl
 
 # Installation Steps
 
-Here we go...
 
-## Boot Arch from the USB Drive
+## Boot Sun from the USB Drive
 
-Hold F12 (or whatever key is used on your system) during startup to access startup menu. Select the USB drive and boot into Arch.
+Hold F12 (or whatever key is used on your system) during startup to access startup menu. Select the USB drive and boot into Sun/OS.
 
 ----
 
 ## Establish an Internet Connection
 
-The most reliable way is to use a wired connection, as Arch is setup by default to connect to DHCP. However, you can usually get WiFi working by running:
+The most reliable way is to use a wired connection, as Sun/OS is setup by default to connect to DHCP. However, you can usually get WiFi working by running:
 
     $   wifi-menu
 
@@ -74,31 +70,10 @@ To test your connection:
 
 ---
 
-## Increase Terminal Font Size
-
-If the terminal font is too small, which can happen if you have a high res display, then install terminus fonts.
-
-First, update the pacman databases:
-
-    $   pacman -Sy
-
-Then install the fonts:
-
-    $   pacman -S terminus-font
-
-Update font cache
-
-    $   fc-cache -fv
-
-Set the font to a large size:
-
-    $   setfont ter-v32b
-
----
 
 ## Remove existing drive partitions
 
-If you are installing Arch on a previously used hard drive you can remove partitions using `fdisk`
+If you are installing Sun/OS on a previously used hard drive you can remove partitions using `fdisk`
 
 First, get the drive node name containing the partition(s) you want to remove and run:
 
@@ -152,7 +127,7 @@ Then run the following commands with your particular size values. Sizes can be s
 
 ## Disk Encryption
 
-Before we setup our LVM we need to encrypt the root partition we just created. I use AES 256. Note that cryptsetup splits the supplied key in half, so to use AES-256 we set the key size to 512.  For more information about LUKS you can visit the [Arch Wiki](https://wiki.archlinux.org/index.php/Dm-crypt/Device_encryption).
+Before we setup our LVM we need to encrypt the root partition we just created. Note that cryptsetup splits the supplied key in half, so to use AES-256 we set the key size to 512.  For more information about LUKS you can visit the [Arch Wiki](https://wiki.archlinux.org/index.php/Dm-crypt/Device_encryption).
 
     $   cryptsetup luksFormat -v -s 512 -h sha512 /dev/sd*
 
@@ -254,17 +229,6 @@ Now generate the new mirrorlist. Note: If you are in a different country change 
 
     $   reflector --verbose --country 'United States' -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
----
-
-## Install Arch Linux
-
-If you only want a base Arch install with no additional packages, run:
-
-    $   pacstrap -i /mnt base base-devel
-
-Typically I also install `git` so I can clone my __[post-install setup and config scripts](https://github.com/rickellis/ArchMatic)__, along with `dialog` and `wpa_supplicant` so that `wifi-menu` will work after booting into the new system. I also install `intel-ucode` to allow the Linux kernel to update the __[processor microcode](https://wiki.archlinux.org/index.php/microcode)__.
-
-    $   pacstrap -i /mnt base base-devel git dialog wpa_supplicant intel-ucode
 ---
 
 ### Generate fstab
@@ -428,9 +392,9 @@ Update the hardware clock. I use UTC:
 
 ## Set Hostname
 
-This is the name of your computer. I name mine "Arch", but you can change it to whatever you want your host to be.
+This is the name of your computer.
 
-    $   echo Arch > /etc/hostname
+    $   echo Sun > /etc/hostname
 
 ---
 
@@ -485,10 +449,6 @@ If you plan on downloading packages from the Arch User Repository, add this:
     SigLevel = Never
     Server = http://repo.archlinux.fr/$arch
 
-In that same file add these (or uncomment if either are there). The `color` directive gives you colored output when running pacman commands, and `ILoveCandy` enables the little yellow pacman animation.
-
-    color
-    ILoveCandy
 
 Then save the file.
 
@@ -504,8 +464,7 @@ The installation is basically done so we now update the databases and all instal
 
 ## Congratulations!
 
-You should now have a working Arch Linux installation. It doesn't have a desktop environment or any applications yet...for that you can 
-check out my __[ArchMatic](https://github.com/rickellis/ArchMatic)__ repo, but the base installation is done.
+You should now have a working Sun/OS installation. Then run the Sun/OS Installer scripts (Dont run the '$ preinstall.sh' and ' archomatic.sh')
 
 First, exit chroot:
 
@@ -523,23 +482,3 @@ Or, if you prefer you can shutdown:
 
 ---
 
-## If you are installing Arch on VirtualBox
-
-Instead of rebooting, as indicated above, shut down the virtual machine and do the following;
-
-Remove the ISO you booted from at:
-
-    Settings > Storage > Controller:IDE
-
-Make sure EFI is enabled:
-
-    Settings > System > Enable EFI
-
-For WiFi connectivity, first get the name of your connection using:
-
-    $   ip link
-
-It should be something like `enp0s3`. Then run:
-
-    $   sudo ip link set dev enp0s3 up
-    $   sudo dhcpcd enp0s3
