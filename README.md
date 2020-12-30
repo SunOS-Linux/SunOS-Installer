@@ -1,8 +1,8 @@
-# Sun/OS Installer Script (GNOME) v1.5.2 R2
+# Sun/OS Installer v2.0.0
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
-This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities. The shell scripts in this repo allow the entire process to be automated.) Sun/OS 2021.01.01 (Codename Waco) will be avaliable on December 30, 2020
+This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities (FOR Advance Users...read the README (Advance) file). The shell scripts in this repo allow the entire process to be automated.) Sun/OS 2021.01.01 (Codename Waco) will be avaliable on January 1, 2021...---> UEFI is currently supported on the installer!
 
 ---
 
@@ -42,9 +42,9 @@ Confirm password:"Enter your password"
 As I mentioned before, create a new Vim file called Arch.conf and type the following:
 
 ```bash
-Title Sun/OS
+Title Arch Linux
 linux /vmlinuz-linux
-initrd /initramfs-linux-.img
+initrd /initramfs-linux.img
 options root="UUID=/dev/sd(x) UUID goes here with the quotations" rw
 ```
 ### 6. Enablining the GNOME Desktop and starting it
@@ -70,7 +70,7 @@ Also install the LTS Kernel* along side the rolling one, and configure the bootl
 =======
 ### Troubleshooting Arch Linux and Sun/OS
 
-__[Arch Linux and Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
+__[Arch Linux and Installation Gude](https://github.com/Server2356/Sun-OS-Installer/blob/Sun-OS-Installer-v2/README%20(Advance).md)__
 
 #### No Wifi
 
@@ -89,6 +89,6 @@ To update the system, run the command below in order for the system to update
 ```bash
 sudo pacman -Syu
 ```
-Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating!
+Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating and curretly the text based installer that's supported on the Sun/OS operating system. (We will soon add a graphical installer and other.)
 
 (C) 2021 Abdon Morales Jr
