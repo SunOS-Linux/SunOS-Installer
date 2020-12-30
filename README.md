@@ -70,7 +70,7 @@ Also install the LTS Kernel* along side the rolling one, and configure the bootl
 =======
 ### Troubleshooting Arch Linux and Sun/OS
 
-__[Arch Linux and Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__
+__[Arch Linux and Installation Gude](https://github.com/Server2356/Sun-OS-Installer/blob/Sun-OS-Installer-v2/README%20(Advance).md)__
 
 #### No Wifi
 
