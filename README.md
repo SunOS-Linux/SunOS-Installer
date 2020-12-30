@@ -7,6 +7,7 @@ This README contains the steps to do the install and configure a fully-functiona
 ---
 ## Advanced
 To create users, encryption, LVM, or other please read the README (Advance) file for more instructions
+
 __[Advanced Installation Guide for Sun/OS](https://github.com/Server2356/Sun-OS-Installer/blob/master/README%20(Advance).md)
 
 ## 1. Setup Boot and Sun/OS-archiso on USB key
