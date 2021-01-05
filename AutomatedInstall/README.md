@@ -1,8 +1,8 @@
-# archlinux-aip
-The Arch Linux's Automated Installation Procedure tool
+# sun-aip
+The Sun/OS Automated Installation Procedure tool
 
 ## What is this?
-This is a utility which will setup Arch Linux from terminal to a desktop for you.
+This is a utility which will setup Sun/OS from ARCHISO terminal to a desktop for the end users.
 
 Feel free to fork it and make your own configuration.
 
