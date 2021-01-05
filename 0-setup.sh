@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post Installer for archiso and Sun/OS
+#	Version 2.5.0	(C) Abdon Morales Jr
 #-------------------------------------------------------------------------
 
 if ! source install.conf; then
