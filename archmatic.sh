@@ -154,7 +154,6 @@ function softwareSetup {
         'p7zip'                 # 7z compression program
         'rsync'                 # Remote file sync utility
         'speedtest-cli'         # Internet speed via terminal
-        'terminus-font'         # Font package with some bigger fonts for login terminal
         'tlp'                   # Advanced laptop power management
         'unrar'                 # RAR compression program
         'unzip'                 # Zip compression program
@@ -390,7 +389,7 @@ echo -n "\nStarting setup ... "
 sleep 5
 clear
 setup
-echo -n "\nStarting base setup ... "
+echo -n "\nStarting base system ... "
 sleep 5
 clear
 baseSetup
