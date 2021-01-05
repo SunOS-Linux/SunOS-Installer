@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archios and Sun/OS
+#   Version 2.5.0   (C) Abdon Morales
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
+echo -e"\nDetected Base System for Sun/OS \n"
 
 PKGS=(
 
