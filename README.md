@@ -11,7 +11,7 @@ https://gitlab.com/Server2356/Sun-OS
 ## Advanced
 To create users, encryption, LVM, or other please read the README (Advance) file for more instructions
 
-__[Advanced Installation Guide for Sun/OS](https://github.com/Server2356/Sun-OS-Installer/blob/master/README%20(Advance).md)
+__[Advanced Installation Guide for Sun/OS](https://github.com/SunOS-Linux/SunOS-Installer/blob/master/README%20(Advance).md)
 
 ## 1. Setup Boot and Sun/OS-archiso on USB key
 
@@ -22,7 +22,7 @@ First, setup the boot USB, boot Sun/OS-archiso live usb, and run the `preinstall
 This step installs Sun/OS to your hard drive. *IT WILL FORMAT THE DISK*
 
 ```bash
-git clone https://github.com/Server2356/Sun-OS-Installer.git
+git clone https://github.com/SunOS-Linux/SunOS-Installer.git
 sh preinstall.sh
 and then run the follwoing commands below and create (vim arch.conf)
 ```
@@ -31,7 +31,8 @@ and then run the follwoing commands below and create (vim arch.conf)
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
-git clone https://github.com/Server2356/Sun-OS-Installer.gitcd ArchMatic
+git clone https://github.com/SunOS-Linux/SunOS-Installer.git
+cd SunOS-Installer
 ./0-setup.sh
 ./1-base.sh
 ./2-software-pacman.sh
@@ -77,7 +78,7 @@ Also install the LTS Kernel* along side the rolling one, and configure the bootl
 =======
 ### Troubleshooting Arch Linux and Sun/OS
 
-__[Arch Linux and Installation Gude](https://github.com/Server2356/Sun-OS-Installer/blob/Sun-OS-Installer-v2/README%20(Advance).md)__
+__[Arch Linux and Installation Gude](https://github.com/SunOS-Linux/SunOS-Installer/blob/Sun-OS-Installer-v2/README%20(Advance).md)__
 
 #### No Wifi
 
@@ -98,4 +99,4 @@ sudo pacman -Syu
 ```
 Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating and curretly the text based installer that's supported on the Sun/OS operating system. (We will soon add a graphical installer and other.)
 
-(C) 2021 Abdon Morales Jr
+(C) 2021 Abdon Morales Jr and Andrew Riefenstahl
