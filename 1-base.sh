@@ -5,6 +5,8 @@
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
+echo -e "\nBase System Version 2.5.1 RC2\n"
+echo -e "\nOS name: Sun/OS v2021.01\n"
 
 PKGS=(
 
@@ -60,4 +62,5 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
+echo -e "\Base System installed!\n"
 echo -e "\nSunOS Installer v2.5.0!\n"
