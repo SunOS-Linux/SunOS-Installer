@@ -60,3 +60,4 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
+echo -e "\nSunOS Installer v2.5.0!\n"
