@@ -1,9 +1,10 @@
 #!/bin/bash
 
 #
-# Created by Liam Powell (gfelipe099)
+# Created by Abdon Morales
+# (C) 2021 Abdon Morales Jr
 # archlinux-aip.sh file
-# For Arch Linux amd64
+# For Sun Systems ---> i386 and amd64
 #
 
 #
