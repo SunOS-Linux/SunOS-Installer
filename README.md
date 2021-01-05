@@ -1,4 +1,4 @@
-# Sun/OS Installer v2.1.1
+# Sun/OS Installer v2.5.0
 
 <img src="https://github.com/Server2356/Sun-OS-Installer/blob/master/Sun:OS.png" />
 
