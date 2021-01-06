@@ -1,5 +1,5 @@
 
-#Updating system to latest release --->Update script with the new one once the Git repo is updates
+# Updating system to latest release --->Update script with the new one once the Git repo is updates
 
 echo "Updating Sun/OS to latest version"
 
