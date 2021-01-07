@@ -82,7 +82,6 @@ PKGS=(
     'gcc'                   # C/C++ compiler
     'glibc'                 # C libraries
     'meld'                  # File/directory comparison
-    'nodejs'                # Javascript runtime environment
     'npm'                   # Node package manager
     'python'                # Scripting language
     'yarn'                  # Dependency management (Hyper needs this)
