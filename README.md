@@ -3,6 +3,8 @@
 <img src="https://github.com/SunOS-Linux/SunOS-Installer/blob/master/Sun:OS.png" />
 
 This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities (FOR Advance Users...read the README (Advance) file). The shell scripts in this repo allow the entire process to be automated.)---> UEFI is currently supported on the installer!
+**The Automated Install is in Public Beta! Do not test, if you know what your doing!**
+
 ## Sun/OS ISO
 To get the Sun/OS ISO please go to the following website:
 https://gitlab.com/Server2356/Sun-OS
