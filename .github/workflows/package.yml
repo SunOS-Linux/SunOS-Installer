@@ -1,19 +1,13 @@
-meta:
-  description: Installer Package for Arch Linux with APT manager
-  vendor: Me
-  maintainer: Me
-files:
-  "/usr/bin/my-package":
-    file: my-package
-    mode: "0755"
-    user: "root"
-  "/etc/my-package/config":
-    file: etc/config
-    mode: "0644"
-    user: "foo"
-    keep: true
-units:
-  - etc/systemd/system/my-package.service
-scripts:
-  "post-install": scripts/post-inst
-user: foo
+- name: Arch Linux PKGBUILD builder action
+  # You may pin to the exact commit or the version.
+  # uses: 2m/arch-pkgbuild-builder@ad24d00d30c74bc7f3ad0c57d16e141666a65486
+  uses: 2m/arch-pkgbuild-builder@v1.16
+  with:
+    # Path to DIRECTORY where the PKGBUILD file is. Assumes the directory is the name of package, ie /path/to/pkgname/
+    pkgname: 
+    # Validation target. Can be one of: "pkgbuild", "srcinfo", "run"
+    target: # default is pkgbuild
+    # Command to run after package installation. Used when target=run
+    command: # optional
+    # Turns debugging on
+    debug: # optional
