@@ -19,7 +19,7 @@ __[Advanced Installation Guide for Sun/OS](https://github.com/SunOS-Linux/SunOS-
 
 First, setup the boot USB, boot Sun/OS-archiso live usb, and run the `preinstall.sh` from terminal since Sun/OS is based from Arch Linux.
 
-### 2. Archiso-Sun/OS-2021.01.01 (Pre-Install)
+### 2. Archiso-Sun/OS-2021.02 (Pre-Install)
 
 This step installs Sun/OS to your hard drive. *IT WILL FORMAT THE DISK*
 
