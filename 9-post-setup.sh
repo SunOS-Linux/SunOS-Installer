@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#	Version 2.5.0	(C) 2021 Abdon Morales
+#	Version 2021.02	(C) 2021 Abdon Morales
 #-------------------------------------------------------------------------
 
 echo -e "\nFINAL SETUP AND CONFIGURATION"
