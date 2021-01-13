@@ -6,7 +6,7 @@
 # archlinux-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
-
+echo "Sun-AIP v0.9.1 Beta  (C) 2021 Abdon Morales"
 #
 # text formatting codes
 # source https://github.com/nbros652/LUKS-guided-manual-partitioning/blob/master/LGMP.sh
