@@ -12,6 +12,7 @@ PKGS=(
     # SYSTEM --------------------------------------------------------------
 
     'linux'             # Long term support kernel
+    'rpm-tools'         # Adds support for RPM packages for Sun/OS and Arch
 
     # TERMINAL UTILITIES --------------------------------------------------
 
@@ -35,7 +36,6 @@ PKGS=(
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
-    'terminator'            # Terminal emulator
     'vim'                   # Terminal Editor
     'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
