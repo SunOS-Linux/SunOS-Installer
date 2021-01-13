@@ -15,4 +15,13 @@ git clone "https://aur.archlinux.org/yum.git"
 cd ${HOME}/yum
 makepkg -si
 
+echo "CLONING: RPM-builder"
+echo "(C) 2012 Red Hat Inc"
+git clone "https://aur.archlinux.org/rpm-builder.git"
+
+cd ${HOME}/rpm-builder
+makepkg -si
+
 echo -e "\nDone! Installed YUM\n"
+echo -e "\nDone! Installed RPM-Builder\n"
+echo -e "\nDone Installing AUR packages!\n"
