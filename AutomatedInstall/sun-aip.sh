@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# Version 2021.02
 #
 # Created by Abdon Morales
 # (C) 2021 Abdon Morales Jr
-# archlinux-aip.sh file
+# sun-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
 
