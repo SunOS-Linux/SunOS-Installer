@@ -9,6 +9,7 @@ echo -e "\nINSTALLING AUR SOFTWARE\n"
 cd "${HOME}"
 
 echo "CLONING: YUM"
+echo "(C) 2011 Seth Vidal"
 git clone "https://aur.archlinux.org/yum.git"
 
 cd ${HOME}/yum
