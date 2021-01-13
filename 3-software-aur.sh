@@ -14,4 +14,4 @@ git clone "https://aur.archlinux.org/yum.git"
 cd ${HOME}/yum
 makepkg -si
 
-echo -e "\nDone!\n"
+echo -e "\nDone! Installed YUM\n"
