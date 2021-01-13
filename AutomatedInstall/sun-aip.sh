@@ -39,7 +39,7 @@ if [ ! -f /usr/bin/pacman ]; then
         os=$(lsb_release -ds | sed 's/"//g')
 fi
 
-if [ "${os}" != "Arch Linux" ]; then
+if [ "${os}" != "Arch Linux""SunOS Linux" ]; then
     echo "You must be using Arch Linux to execute this script."
     exit 1
 fi
@@ -47,11 +47,11 @@ fi
 function welcome() {
     clear
     sudo pacman -S figlet --noconfirm --needed &>/dev/null
-    figlet -c "Arch Linux"
+    figlet -c "Sun/OS"
     figlet -c "AIP"
     sudo pacman -Rncsd figlet --noconfirm &>/dev/null
     kernelVer="$(uname -r)"
-    echo -e "Welcome to the Arch Linux Automated Installation Procedure tool!\nCreated by Liam Powell (gfelipe099)\nKernel version: ${kernelVer}\n"
+    echo -e "Welcome to the Sun Automated Installation Procedure tool!\nCreated by SunOS Linux Team!\nKernel version: ${kernelVer}\n"
 }
 
 function root {
