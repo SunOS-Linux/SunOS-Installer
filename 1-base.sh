@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2.5.0   (C) Abdon Morales Jr
+#   Version 2021.02   (C) Abdon Morales Jr
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
-echo -e "\nBase System Version 2.5.1 RC2\n"
-echo -e "\nOS name: Sun/OS v2021.01\n"
+echo -e "\nBase System Version 3.0 RC4\n"
+echo -e "\nOS name: Sun/OS v2021.02\n"
 
 PKGS=(
 
