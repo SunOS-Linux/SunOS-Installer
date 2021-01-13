@@ -62,5 +62,5 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
-echo -e "\Base System installed!\n"
+echo -e "\nBase System installed!\n"
 echo -e "\nSunOS Installer v2.5.0!\n"
