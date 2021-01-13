@@ -7,9 +7,9 @@ echo "Updating Sun/OS to latest version"
 
  nano /etc/os-release
 
-sed -i '4s/2020.12.09/2021.01.01' /etc/os-release
+sed -i '4s/2021.01.01/2021.02' /etc/os-release
 
-sed -i '5s/Mount Bonnell/Waco' /etc/os-release
+sed -i '5s/Waco/Dallas' /etc/os-release
 
 echo "System updated successfully"
 
@@ -19,7 +19,7 @@ sudo pacman -Syy
 
 sudo pacman -Syu
 
-echo "Now updated to Sun/OS v2021.01.01 (Waco)!"
+echo "Now updated to Sun/OS v2021.02 (Dallas)!"
 
 echo "Reloading Sun/OS"
 
