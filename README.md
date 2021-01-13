@@ -101,4 +101,4 @@ sudo pacman -Syu
 ```
 Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating and curretly the text based installer that's supported on the Sun/OS operating system. (We will soon add a graphical installer and other.)
 
-(C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
+(C) 2021 SunOS Linux Team
