@@ -39,9 +39,7 @@ PKGS=(
     'vim'                   # Terminal Editor
     'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
-    'zsh'                   # ZSH shell
-    'zsh-completions'       # Tab completion for ZSH
-
+    'fish'                  # The interactive Fish shell 
     # DISK UTILITIES ------------------------------------------------------
 
     'android-tools'         # ADB for Android
