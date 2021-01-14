@@ -1,4 +1,4 @@
-# sun-aip v1.0.0
+# sun-aip v2021.02
 The Sun/OS Automated Installation Procedure tool
 
 ## What is this?
