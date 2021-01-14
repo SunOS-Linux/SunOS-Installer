@@ -41,7 +41,7 @@ if [ ! -f /usr/bin/pacman ]; then
 fi
 
 if [ "${os}" != "Arch Linux""SunOS Linux" ]; then
-    echo "You must be using Arch Linux to execute this script."
+    echo "You must be using Arch Linux or Sun/OS to execute this script."
     exit 1
 fi
 
@@ -57,8 +57,8 @@ function welcome() {
 
 function root {
     # based of
-    # source: https://github.com/ChrisTitusTech/ArchMatic
-    # author: ChrisTitusTech
+    # source: https://github.com/SunOS-Linux/SunOS-Installer
+    # author: Sun/OS Linux
     if [[ ! -d ~/.config/archlinux-aip/ ]]; then
         mkdir -p ~/.config/archlinux-aip/
     fi
@@ -183,7 +183,7 @@ function baseSetup() {
     echo -e "${yellow}${boldText}:: Generating UUID-based '/etc/fstab' file...${normalText} \n"
     genfstab -U /mnt > /mnt/etc/fstab
 
-    echo -e "${yellow}${boldText}:: Switching to installed base system...${normalText} \n"
+    echo -e "${yellow}${boldText}:: Switching to installed Sun Base System...${normalText} \n"
     arch-chroot /mnt
 
     pacman -Sy && pacman -S reflector && reflector --country ${country} --sort rate --save /etc/pacman.d/mirrorlist
