@@ -11,8 +11,9 @@ PKGS=(
 
     # SYSTEM --------------------------------------------------------------
 
-    'linux'             # Long term support kernel
+    'linux'             # Rolling kernel
     'rpm-tools'         # Adds support for RPM packages for Sun/OS and Arch
+    'linux-lts'         # Long term support kernel
 
     # TERMINAL UTILITIES --------------------------------------------------
 
