@@ -57,8 +57,6 @@ PKGS=(
     'samba'                 # Samba File Sharing
     'smartmontools'         # Disk Monitoring
     'smbclient'             # SMB Connection 
-    'xfsprogs'              # XFS Support
-
     # GENERAL UTILITIES ---------------------------------------------------
 
     'flameshot'             # Screenshots
