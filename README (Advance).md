@@ -464,7 +464,7 @@ The installation is basically done so we now update the databases and all instal
 
 ## Congratulations!
 
-You should now have a working Sun/OS installation. Then run the Sun/OS Installer scripts (Dont run the '$ preinstall.sh' and ' archomatic.sh')
+You should now have a working Sun/OS installation. Then run the Sun/OS Installer scripts (Dont run the '$ preinstall.sh')
 
 First, exit chroot:
 
