@@ -20,9 +20,10 @@ PKGS=(
         'xorg-xinput'           # Xorg xinput
         'mesa'                  # Open source version of OpenGL
 
-    # --- Setup Desktop
+    # --- System Core
         'gnome'                 # Gnome Desktop and other goodies
         'gnome-tweaks'          # Gnome Tweaks for the GNOME Desktop
+        'vi'                    # Vim editor
 
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
