@@ -1,8 +1,8 @@
 # Maintainer: Philip Müller <philm[at]manjaro[dog]org>
 
 pkgname=calamares
-pkgver=3.2.34
-_pkgver=3.2.34
+pkgver=3.2.35
+_pkgver=3.2.35
 pkgrel=3
 _commit=ee052f0d1ae23b989915f05c1d8d50f373b2357d
 pkgdesc='Distribution-independent installer framework'

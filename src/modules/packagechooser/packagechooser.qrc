@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/choose-office.jpg</file>
+        <file>images/FreeOffice.jpg</file>
+        <file>images/LibreOffice.jpg</file>
+    </qresource>
+</RCC>
