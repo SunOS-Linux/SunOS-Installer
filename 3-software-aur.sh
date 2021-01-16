@@ -22,6 +22,11 @@ git clone "https://aur.archlinux.org/rpm-builder.git"
 cd ${HOME}/rpm-builder
 makepkg -si
 
+echo "Cloning: SELinux"
+git clone "https://aur.archlinux.org/linux-vanilla-selinux.git"
+
+cd ${HOME}/linux-vanilla-selinux
+
 echo "Cloning the Sun Kernel"
 echo "(C) 2020 Morales Research Corp."
 git clone "https://github.com/SunOS-Linux/Sun-Kernel"
