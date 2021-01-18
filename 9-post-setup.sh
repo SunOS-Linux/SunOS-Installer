@@ -84,7 +84,7 @@ sudo sed -i 's|load-module module-esound-protocol-unix|#load-module module-esoun
 
 echo -e "\nEnabling Login Display Manager"
 
-sudo systemctl enable --now lightdm.service
+sudo systemctl enable gdm.service
 
 # ------------------------------------------------------------------------
 
