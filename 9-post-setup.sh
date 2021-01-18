@@ -105,7 +105,7 @@ sudo systemctl stop dhcpcd.service
 sudo systemctl enable --now NetworkManager.service
 echo "
 ###############################################################################
-# Cleaning
+# Cleaning the excess from the OS!
 ###############################################################################
 "
 # Remove no password sudo rights
