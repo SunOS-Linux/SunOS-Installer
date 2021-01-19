@@ -26,6 +26,7 @@ echo "Cloning: SELinux"
 git clone "https://aur.archlinux.org/linux-vanilla-selinux.git"
 
 cd ${HOME}/linux-vanilla-selinux
+makepkg -si
 
 echo "Cloning the Sun Kernel"
 echo "(C) 2020 Morales Research Corp."
@@ -40,4 +41,5 @@ make menuconfig
 echo -e "\nDone! Installed YUM\n"
 echo -e "\nDone! Installed RPM-Builder\n"
 echo -e "\nFinished downloading kernel!\n"
+echo -e "\nFinished downloading SELinux\n"
 echo -e "\nDone Installing AUR packages!\n"
