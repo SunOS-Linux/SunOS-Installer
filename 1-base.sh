@@ -64,4 +64,4 @@ done
 
 echo -e "\nDone!\n"
 echo -e "\nBase System installed!\n"
-echo -e "\nSunOS Installer v2.5.0!\n"
+echo -e "\nSunOS Installer v2021.02 (v3.0)!\n"
