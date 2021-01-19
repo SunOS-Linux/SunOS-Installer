@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# (C) 2021 Abdon Morales Jr
-# (C) 2021 Andrew Riefenstahl
 #-------------------------------------------------------------------------
 #  Arch Linux Installer and Post-Installer v2021.02
 #   (C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
