@@ -5,7 +5,7 @@
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
-echo -e "\nBase System Version 3.0 RC4\n"
+echo -e "\nBase System Version 3.0\n"
 echo -e "\nOS name: Sun/OS v2021.02\n"
 
 PKGS=(
