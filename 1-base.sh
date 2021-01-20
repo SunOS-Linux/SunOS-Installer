@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2.5.0   (C) Abdon Morales Jr
+#   Version 2021.02   (C) Abdon Morales Jr
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
-echo -e "\nBase System Version 2.5.1 RC2\n"
-echo -e "\nOS name: Sun/OS v2021.01\n"
+echo -e "\nBase System Version 3.0\n"
+echo -e "\nOS name: Sun/OS v2021.02\n"
 
 PKGS=(
 
@@ -20,9 +20,10 @@ PKGS=(
         'xorg-xinput'           # Xorg xinput
         'mesa'                  # Open source version of OpenGL
 
-    # --- Setup Desktop
+    # --- System Core
         'gnome'                 # Gnome Desktop and other goodies
         'gnome-tweaks'          # Gnome Tweaks for the GNOME Desktop
+        'vi'                    # Vim editor
 
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
@@ -62,5 +63,5 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
-echo -e "\Base System installed!\n"
-echo -e "\nSunOS Installer v2.5.0!\n"
+echo -e "\nBase System installed!\n"
+echo -e "\nSunOS Installer v2021.02 (v3.0)!\n"

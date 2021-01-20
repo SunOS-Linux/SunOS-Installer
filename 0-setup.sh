@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post Installer for archiso and Sun/OS
-#	Version 2.5.0	(C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
+#	Version 2021.02	(C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
 #-------------------------------------------------------------------------
 
 if ! source install.conf; then
@@ -51,7 +51,7 @@ localectl --no-ask-password set-locale LANG="en_US.UTF-8" LC_COLLATE="" LC_TIME=
 localectl --no-ask-password set-keymap us
 
 # Hostname
-hostnamectl --no-ask-password set-hostname $SunOS
+hostnamectl --no-ask-password set-hostname $Sun
 
 # Add sudo no password rights
 sed -i 's/^# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers

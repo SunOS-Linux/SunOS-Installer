@@ -1,9 +1,9 @@
-# Sun/OS Installer v2.5.0
+# Sun/OS Installer v2021.02
 
 <img src="https://github.com/SunOS-Linux/SunOS-Installer/blob/master/Sun:OS.png" />
 
-This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities (FOR Advance Users...read the README (Advance) file). The shell scripts in this repo allow the entire process to be automated.)---> UEFI is currently supported on the installer!
-**The Automated Install is in Public Beta! Do not test, unless you know what your doing!**
+This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities **(FOR Advance Users...read the README (Advance) file)** . The shell scripts in this repo allow the entire process to be automated.)---> UEFI is currently supported on the installer!
+**The Automated Install is in Public Beta! Do not test, unless you know what your doing! Added support for the Sun Kernel v1.10**
 
 ## Sun/OS ISO
 To get the Sun/OS ISO please go to the following website:
@@ -19,7 +19,7 @@ __[Advanced Installation Guide for Sun/OS](https://github.com/SunOS-Linux/SunOS-
 
 First, setup the boot USB, boot Sun/OS-archiso live usb, and run the `preinstall.sh` from terminal since Sun/OS is based from Arch Linux.
 
-### 2. Archiso-Sun/OS-2021.01.01 (Pre-Install)
+### 2. Archiso-Sun/OS-2021.02 (Pre-Install)
 
 This step installs Sun/OS to your hard drive. *IT WILL FORMAT THE DISK*
 
@@ -101,4 +101,4 @@ sudo pacman -Syu
 ```
 Press y and press enter, and the update should install. Once the update is finished reboot your system and execute the "update.sh" file to update the system information, we will soon push a package for updating and curretly the text based installer that's supported on the Sun/OS operating system. (We will soon add a graphical installer and other.)
 
-(C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
+(C) 2021 SunOS Linux Team

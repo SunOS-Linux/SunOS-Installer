@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
-#      _          _    __  __      _   _
-#     /_\  _ _ __| |_ |  \/  |__ _| |_(_)__
-#    / _ \| '_/ _| ' \| |\/| / _` |  _| / _|
-#   /_/ \_\_| \__|_||_|_|  |_\__,_|\__|_\__|
-#  Sun/OS Installer and Post-Installer for archiso and Sun/OS
+# Sun/OS Installer for Sun Systems and OS 
+# v2021.02        (C) 2021 Abdon Morales
 #-------------------------------------------------------------------------
 
 echo "-------------------------------------------------"
@@ -60,7 +57,7 @@ mkdir /mnt/boot/efi
 mount -t vfat "${DISK}1" /mnt/boot/
 
 echo "--------------------------------------"
-echo "-- Arch Install on Main Drive       --"
+echo "---- Sun Install on Main Drive -------"
 echo "--------------------------------------"
 pacstrap /mnt base base-devel linux linux-firmware vim nano sudo --noconfirm --needed
 genfstab -U /mnt >> /mnt/etc/fstab

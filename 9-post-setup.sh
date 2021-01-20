@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#	Version 2.5.0	(C) 2021 Abdon Morales
+#	Version 2021.02	(C) 2021 Abdon Morales
 #-------------------------------------------------------------------------
 
 echo -e "\nFINAL SETUP AND CONFIGURATION"
 
 # ------------------------------------------------------------------------
 
-echo -e "\nGenaerating .xinitrc file"
+echo -e "\nGenerating .xinitrc file"
 
 # Generate the .xinitrc file so we can launch Awesome from the
 # terminal using the "startx" command
@@ -84,7 +84,7 @@ sudo sed -i 's|load-module module-esound-protocol-unix|#load-module module-esoun
 
 echo -e "\nEnabling Login Display Manager"
 
-sudo systemctl enable --now lightdm.service
+sudo systemctl enable gdm.service
 
 # ------------------------------------------------------------------------
 
@@ -105,7 +105,7 @@ sudo systemctl stop dhcpcd.service
 sudo systemctl enable --now NetworkManager.service
 echo "
 ###############################################################################
-# Cleaning
+# Cleaning the excess from the OS!
 ###############################################################################
 "
 # Remove no password sudo rights

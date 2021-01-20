@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2.5.0   (C) Abdon Morales
+#   Version 2021.02   (C) Abdon Morales
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
@@ -11,7 +11,9 @@ PKGS=(
 
     # SYSTEM --------------------------------------------------------------
 
-    'linux'             # Long term support kernel
+    'linux'             # Rolling kernel
+    'rpm-tools'         # Adds support for RPM packages for Sun/OS and Arch
+    'linux-lts'         # Long term support kernel
 
     # TERMINAL UTILITIES --------------------------------------------------
 
@@ -35,13 +37,10 @@ PKGS=(
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
-    'terminator'            # Terminal emulator
     'vim'                   # Terminal Editor
     'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
-    'zsh'                   # ZSH shell
-    'zsh-completions'       # Tab completion for ZSH
-
+    'fish'                  # The interactive Fish shell 
     # DISK UTILITIES ------------------------------------------------------
 
     'android-tools'         # ADB for Android
@@ -59,8 +58,6 @@ PKGS=(
     'samba'                 # Samba File Sharing
     'smartmontools'         # Disk Monitoring
     'smbclient'             # SMB Connection 
-    'xfsprogs'              # XFS Support
-
     # GENERAL UTILITIES ---------------------------------------------------
 
     'flameshot'             # Screenshots

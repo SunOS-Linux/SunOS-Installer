@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# Version 2021.02
 #
 # Created by Abdon Morales
 # (C) 2021 Abdon Morales Jr
-# archlinux-aip.sh file
+# sun-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
 echo "Sun-AIP v0.9.1 Beta  (C) 2021 Abdon Morales"
@@ -39,25 +40,25 @@ if [ ! -f /usr/bin/pacman ]; then
         os=$(lsb_release -ds | sed 's/"//g')
 fi
 
-if [ "${os}" != "Arch Linux" ]; then
-    echo "You must be using Arch Linux to execute this script."
+if [ "${os}" != "Arch Linux""SunOS Linux" ]; then
+    echo "You must be using Arch Linux or Sun/OS to execute this script."
     exit 1
 fi
 
 function welcome() {
     clear
     sudo pacman -S figlet --noconfirm --needed &>/dev/null
-    figlet -c "Arch Linux"
+    figlet -c "Sun/OS"
     figlet -c "AIP"
     sudo pacman -Rncsd figlet --noconfirm &>/dev/null
     kernelVer="$(uname -r)"
-    echo -e "Welcome to the Arch Linux Automated Installation Procedure tool!\nCreated by Liam Powell (gfelipe099)\nKernel version: ${kernelVer}\n"
+    echo -e "Welcome to the Sun Automated Installation Procedure tool!\nCreated by SunOS Linux Team!\nKernel version: ${kernelVer}\n"
 }
 
 function root {
     # based of
-    # source: https://github.com/ChrisTitusTech/ArchMatic
-    # author: ChrisTitusTech
+    # source: https://github.com/SunOS-Linux/SunOS-Installer
+    # author: Sun/OS Linux
     if [[ ! -d ~/.config/archlinux-aip/ ]]; then
         mkdir -p ~/.config/archlinux-aip/
     fi
@@ -182,7 +183,7 @@ function baseSetup() {
     echo -e "${yellow}${boldText}:: Generating UUID-based '/etc/fstab' file...${normalText} \n"
     genfstab -U /mnt > /mnt/etc/fstab
 
-    echo -e "${yellow}${boldText}:: Switching to installed base system...${normalText} \n"
+    echo -e "${yellow}${boldText}:: Switching to installed Sun Base System...${normalText} \n"
     arch-chroot /mnt
 
     pacman -Sy && pacman -S reflector && reflector --country ${country} --sort rate --save /etc/pacman.d/mirrorlist

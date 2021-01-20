@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# (C) 2021 Abdon Morales Jr
-# (C) 2021 Andrew Riefenstahl
 #-------------------------------------------------------------------------
-#  Sun/OS Installer and Post-Installer v1.5 ---> Sun/OS 2021.01.01
+#  Arch Linux Installer and Post-Installer v2021.02
+#   (C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
 #-------------------------------------------------------------------------
 
 # Verify Arch Linux or Sun/OS is running
