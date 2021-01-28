@@ -2,6 +2,7 @@
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
 #   Version 2021.02   (C) Abdon Morales Jr
+# Security Patch #1                                         Jan 27, 2021
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
