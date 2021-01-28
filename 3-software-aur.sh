@@ -2,6 +2,7 @@
 #-------------------------------------------------------------------------
 # Sun/OS Installer for Sun/OS and Sun Systems
 #   Version 2021.02     (C) 2021 Abdon Morales Jr
+# Security Patch #1                                     Jan 27, 2021
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING AUR SOFTWARE and Proprietary Sun Kernel!\n"
@@ -34,6 +35,11 @@ git clone "https://github.com/SunOS-Linux/Sun-Kernel"
 echo "Download complete!"
 echo "Please compile the kernel!"
 echo "For more Information and instructions, go to https://www.kernel.org/doc/html/latest/"
+
+echo "Cloning doas"
+git clone "https://aur.archlinux.org/doas.git"
+cd ${HOME}/doas
+makepkg -si
 
 cd ${HOME}/Sun-Kernel/SUN-5.10.6
 make menuconfig

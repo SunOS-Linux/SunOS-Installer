@@ -2,6 +2,7 @@
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
 #	Version 2021.02	(C) 2021 Abdon Morales
+# Security Patch #1					Jan 27, 2021
 #-------------------------------------------------------------------------
 
 echo -e "\nFINAL SETUP AND CONFIGURATION"
