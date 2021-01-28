@@ -2,6 +2,7 @@
 #-------------------------------------------------------------------------
 # Sun/OS Installer for Sun/OS and Sun Systems
 #   Version 2021.02     (C) 2021 Abdon Morales Jr
+# Security Patch #1                                     Jan 27, 2021
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING AUR SOFTWARE and Proprietary Sun Kernel!\n"
