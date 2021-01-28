@@ -2,8 +2,10 @@
 
 # Version 2021.02
 #
+# Security Patch #1                 Jan 27, 2021
+#
 # Created by Abdon Morales
-# (C) 2021 Abdon Morales Jr
+# (C) 2021 Morales Research Corporation 
 # sun-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
