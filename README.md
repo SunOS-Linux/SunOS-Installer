@@ -1,4 +1,4 @@
-# Sun/OS Installer v2021.02
+# Sun/OS Installer v2021.02-SP01
 
 <img src="https://github.com/SunOS-Linux/SunOS-Installer/blob/master/Sun:OS.png" />
 
