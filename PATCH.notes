@@ -1,3 +1,8 @@
 # The patches include the following for Sun/OS System software:
 
-1. 
+1. Sudo is still included
+2. Adds AUR package doas as the alternative sudo for Sun/OS and Arch systems
+3. Sudo will be removed in the next release
+
+January 27, 2021
+Authored by Abdon Morales
