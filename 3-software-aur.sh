@@ -35,6 +35,11 @@ echo "Download complete!"
 echo "Please compile the kernel!"
 echo "For more Information and instructions, go to https://www.kernel.org/doc/html/latest/"
 
+echo "Cloning doas"
+git clone "https://aur.archlinux.org/doas.git"
+cd ${HOME}/doas
+makepkg -si
+
 cd ${HOME}/Sun-Kernel/SUN-5.10.6
 make menuconfig
 
