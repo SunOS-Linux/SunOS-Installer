@@ -107,4 +107,8 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo -e "\nDone!\n"
+echo -e "\nDone installing PKGs\n"
+echo -e "\nNow installing Sun Desktop\n"
+git clone https://github.com/SunOS-Linux/SunDE.git
+cd ${HOME}/SunDE
+./desktop-installer.sh
