@@ -108,3 +108,7 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
+echo -e "\nNow installing Sun Desktop\n"
+git clone https://github.com/SunOS-Linux/SunDE.git
+cd ${HOME}/SunDE
+./desktop-installer.sh
