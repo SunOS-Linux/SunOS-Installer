@@ -111,3 +111,4 @@ echo -e "\nNow installing Sun Desktop\n"
 git clone https://github.com/SunOS-Linux/Sun-Desktop.git
 cd ${HOME}/SunDE
 ./desktop-installer.sh
+echo -e "\nDone installing PKGs\n"
