@@ -40,7 +40,7 @@ git clone "https://aur.archlinux.org/doas.git"
 cd ${HOME}/doas
 makepkg -si
 
-cd ${HOME}/Sun-Kernel/SUN-5.10.6
+cd ${HOME}/Sun-Kernel/2.0.0
 make menuconfig
 
 echo -e "\nDone! Installed YUM\n"
