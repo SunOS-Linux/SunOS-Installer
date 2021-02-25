@@ -29,7 +29,7 @@ sh preinstall.sh
 and then run the follwoing commands below and create (vim arch.conf)
 ```
 
-### 3. Sun/OS - Install internals of Sun/OS
+### 3. Sun/OS Linux - Install internals of Sun/OS Linux
 
 ```bash
 pacman -S --no-confirm pacman-contrib curl git
