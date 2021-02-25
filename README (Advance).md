@@ -1,6 +1,6 @@
-# Installing Sun/OS on a LUKS Encrypted Drive using LVM booting with UEFI
+# Installing Sun/OS Linux on a LUKS Encrypted Drive using LVM booting with UEFI
 
-This document describes my preferred way to install Arch Linux.
+This document describes the preferred way for Advanced Users to install Sun/OS Linux.
 
 * __LUKS__ allows full disk encryption.
 
