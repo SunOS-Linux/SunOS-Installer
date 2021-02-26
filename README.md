@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/SunOS-Linux/SunOS-Installer)
+
 # Sun/OS Installer v2021.02-SP01
 
 <img src="https://github.com/SunOS-Linux/SunOS-Installer/blob/master/Sun:OS.png" />
