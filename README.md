@@ -19,7 +19,7 @@ To create users, encryption, LVM, or other please read the README (Advance) file
 
 First, setup the boot USB, boot Sun/OS-archiso live usb, and run the `preinstall.sh` from terminal since Sun/OS Linux is based from Arch Linux.
 
-### 2. Sun/OS Linux-2021.02 (Pre-Install)
+### 2. Sun/OS Linux-2021.03 (Pre-Install)
 
 This step installs Sun/OS to your hard drive. *IT WILL FORMAT THE DISK*
 
