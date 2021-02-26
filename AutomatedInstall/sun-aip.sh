@@ -7,7 +7,7 @@
 # sun-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
-echo "Sun-AIP v3.0.0  (C) 2021 Morales Research Corporation "
+echo "Sun-AIP v4.0.0  (C) 2021 Morales Research Corporation "
 #
 # text formatting codes
 # source https://github.com/nbros652/LUKS-guided-manual-partitioning/blob/master/LGMP.sh
@@ -285,7 +285,7 @@ deviceName="${input3}"" > ~/.config/scrcpy/main.conf
         esac
     done
 
-    echo -e "\n:: Base system is now ready for use\n"
+    echo -e "\n:: Base System v4.0 is now ready for use\n"
     read -n1 -p ":: Press any key to continue..."
 }
 
