@@ -1,5 +1,7 @@
-# Sun Installer v2021.03
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/SunOS-Linux/SunOS-Installer)
+
+# Sun/OS Installer v2021.02-SP01
 <img src="https://github.com/SunOS-Linux/SunOS-Installer/blob/master/Sun:OS.png" />
 
 This README contains the steps to do the install and configure a fully-functional Sun/OS installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all applications and utilities **(FOR Advance Users...read the README (Advance) file)** . The shell scripts in this repo allow the entire process to be automated.)---> UEFI is currently supported on the installer!
