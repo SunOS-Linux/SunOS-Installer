@@ -6,4 +6,4 @@ For other, you are free to contribute, this includes the Sun Kernel and other re
 Thanks!,
 Sun/OS Linux!
 
-(C) 2021 Abdon Morales
+(C) 2021 Morales Research Corp

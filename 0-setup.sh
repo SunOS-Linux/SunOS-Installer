@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
-#  Sun/OS Installer and Post Installer for archiso and Sun/OS
-#	Version 2021.02	(C) 2021 Abdon Morales Jr and Andrew Riefenstahl 
-# Security Patch #1					Jan 27, 2021
+#  Sun Installer
+#   Version 2021.03   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 if ! source install.conf; then

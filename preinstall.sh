@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
-# Sun/OS Installer for Sun Systems and OS 
-# v2021.02        (C) 2021 Abdon Morales
-# Security Patch #1                                     Jan 27, 2021
+#  Sun/OS Installer and Post-Installer for archiso and Sun/OS
+#   Version 2021.03   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 echo "-------------------------------------------------"
@@ -45,7 +44,7 @@ sgdisk -c 1:"UEFISYS" ${DISK}
 sgdisk -c 2:"ROOT" ${DISK}
 
 # make filesystems
-echo -e "\nCreating Filesystems...\n$HR"
+echo -e "\nCreating Sun Filesystems...\n$HR"
 
 mkfs.vfat -F32 -n "UEFISYS" "${DISK}1"
 mkfs.ext4 -L "ROOT" "${DISK}2"

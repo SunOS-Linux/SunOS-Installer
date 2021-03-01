@@ -1,6 +1,6 @@
-# Installing Sun/OS on a LUKS Encrypted Drive using LVM booting with UEFI
+# Installing Sun/OS Linux on a LUKS Encrypted Drive using LVM booting with UEFI
 
-This document describes my preferred way to install Arch Linux.
+This document describes the preferred way for Advanced Users to install Sun/OS Linux.
 
 * __LUKS__ allows full disk encryption.
 
@@ -13,7 +13,7 @@ Before you begin you must prepare your installation media and make sure your BIO
 
 ## Prepare Installation Media
 
-[Download]The Sun/OS ISO from GitLab and create a bootable USB drive. The simplest way to create bootable media on Linux or Mac OS (Using the terminal) is using the dd command:
+[Download]The Sun/OS Linux ISO from GitLab and create a bootable USB drive. The simplest way to create bootable media on Linux or Mac OS (Using the terminal) is using the dd command:
 
     $   sudo dd bs=4M if=/path_to_arch_.iso of=/dev/sd* && sync
 

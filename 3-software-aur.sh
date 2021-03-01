@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
-# Sun/OS Installer for Sun/OS and Sun Systems
-#   Version 2021.02     (C) 2021 Abdon Morales Jr
-# Security Patch #1                                     Jan 27, 2021
+#  Sun/OS Installer and Post-Installer for archiso and Sun/OS
+#   Version 2021.03   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING AUR SOFTWARE and Proprietary Sun Kernel!\n"
@@ -41,7 +40,7 @@ git clone "https://aur.archlinux.org/doas.git"
 cd ${HOME}/doas
 makepkg -si
 
-cd ${HOME}/Sun-Kernel/SUN-5.10.6
+cd ${HOME}/Sun-Kernel/2.0.0
 make menuconfig
 
 echo -e "\nDone! Installed YUM\n"

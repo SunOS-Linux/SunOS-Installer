@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2021.02   (C) Abdon Morales Jr
-# Security Patch #1                                         Jan 27, 2021
+#   Version 2021.03   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
-echo -e "\nBase System Version 3.0\n"
-echo -e "\nOS name: Sun/OS v2021.02\n"
+echo -e "\nBase System Version 4.0\n"
+echo -e "\nOS name: Sun/OS v2021.03\n"
 
 PKGS=(
 
@@ -65,4 +64,4 @@ done
 
 echo -e "\nDone!\n"
 echo -e "\nBase System installed!\n"
-echo -e "\nSunOS Installer v2021.02 (v3.0)!\n"
+echo -e "\nSunOS Installer v2021.03 (v4.0)!\n"

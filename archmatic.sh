@@ -12,7 +12,7 @@ if [ ! -f /usr/bin/pacman ]; then
         pacman -Sy && sudo pacman -Syyy && pacman -S lsb-release --noconfirm --needed &>/dev/null
         os=$(lsb_release -ds | sed 's/"//g')
 
-if [ "${os}" != "Arch Linux or Sun/OS" ]; then
+if [ "${os}" != "Arch Linux or Sun/OS Linux" ]; then
     echo "You must be using Sun/OS-arch to execute this script."
     exit 1
 fi
@@ -401,4 +401,4 @@ sleep 5
 clear
 postInstallation
 clear
-echo -n "\n\n\n Sun/OS is now installed... Please reboot your system!\n\n\n"
+echo -n "\n\n\n Sun/OS Linux is now installed... Please reboot your system!\n\n\n"

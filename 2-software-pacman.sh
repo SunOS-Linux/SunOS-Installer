@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2021.02   (C) Abdon Morales
-# Security Patch #1                                     Jan 27, 2021
+#   Version 2021.03   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
@@ -107,4 +106,9 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
+echo -e "\nDone!\n"
+echo -e "\nNow installing Sun Desktop\n"
+git clone https://github.com/SunOS-Linux/Sun-Desktop.git
+cd ${HOME}/SunDE
+./desktop-installer.sh
 echo -e "\nDone installing PKGs\n"
