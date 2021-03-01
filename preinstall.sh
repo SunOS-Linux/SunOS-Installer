@@ -44,7 +44,7 @@ sgdisk -c 1:"UEFISYS" ${DISK}
 sgdisk -c 2:"ROOT" ${DISK}
 
 # make filesystems
-echo -e "\nCreating Filesystems...\n$HR"
+echo -e "\nCreating Sun Filesystems...\n$HR"
 
 mkfs.vfat -F32 -n "UEFISYS" "${DISK}1"
 mkfs.ext4 -L "ROOT" "${DISK}2"
