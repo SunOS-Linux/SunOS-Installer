@@ -59,11 +59,11 @@ function root {
     # based of
     # source: https://github.com/SunOS-Linux/SunOS-Installer
     # author: Sun/OS Linux
-    if [[ ! -d ~/.config/archlinux-aip/ ]]; then
-        mkdir -p ~/.config/archlinux-aip/
+    if [[ ! -d ~/.config/sun-aip/ ]]; then
+        mkdir -p ~/.config/sun-aip/
     fi
 
-    if ! source ~/.config/archlinux-aip/main.conf &>/dev/null; then
+    if ! source ~/.config/sun-aip/main.conf &>/dev/null; then
         echo -e "${red}${boldText}:: ERROR: Configuration file 'archlinux-aip.conf' not found. Creating a new one...\n"
         echo -e "\n${yellow}${boldText}:: Pacman Mirrorlist Settings${normalText}\n"
         read -p "Where do you live? (Example: United States): " country
@@ -93,7 +93,7 @@ function root {
         done
         printf '[Pacman Mirrorlist Settings]\ncountry="${country}"\n\n[System Settings}\nregion="${region}"\ncity="${city}"\nlang="${lang}"\nkeymap="${keymap}"\nhostname="${hostname}"\neditor="${editor} visudo"\nqtplatform="${qtplatform}"\nqtplatformtheme="${qtplatformtheme}"\n\n[User Settings]\nusername="${username}"\npassword="${password}"' > ~/.config/archlinux-aip/main.conf
         else
-            source ~/.config/archlinux-aip/main.conf &>/dev/null
+            source ~/.config/sun-aip/main.conf &>/dev/null
             echo -e "${green}${boldText}:: Your configuration file was found and loaded successfully!${normalText}\n"
     fi
 }
