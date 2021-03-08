@@ -8,19 +8,16 @@ echo -e "\nINSTALLING AUR SOFTWARE and Proprietary Sun Kernel!\n"
 
 cd "${HOME}"
 
-echo "CLONING: YUM"
-echo "(C) 2011 Seth Vidal"
-git clone "https://aur.archlinux.org/yum.git"
-
-cd ${HOME}/yum
-makepkg -si
-
 echo "CLONING: RPM-builder"
 echo "(C) 2012 Red Hat Inc"
 git clone "https://aur.archlinux.org/rpm-builder.git"
-
 cd ${HOME}/rpm-builder
 makepkg -si
+
+ehco "Cloning: DNF"
+echo "Dandified YUM"
+git clone "https://aur.archlinux.org/dnf.git"
+cd ${HOME}/dnf
 
 echo "Cloning: SELinux"
 git clone "https://aur.archlinux.org/linux-vanilla-selinux.git"
