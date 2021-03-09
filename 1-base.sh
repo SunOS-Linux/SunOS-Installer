@@ -5,8 +5,8 @@
 #-------------------------------------------------------------------------
 
 echo -e "\nInstalling Base System\n"
-echo -e "\nBase System Version 4.0\n"
-echo -e "\nOS name: Sun/OS v2021.03\n"
+echo -e "\nBase OS Version 5.0\n"
+echo -e "\nOS name: Sun/OS v2021.04\n"
 
 PKGS=(
 
@@ -21,8 +21,7 @@ PKGS=(
         'mesa'                  # Open source version of OpenGL
 
     # --- System Core
-        'gnome'                 # Gnome Desktop and other goodies
-        'gnome-tweaks'          # Gnome Tweaks for the GNOME Desktop
+        'kde'                   # KDE desktop environment 
         'vi'                    # Vim editor
 
     # --- Networking Setup
@@ -63,5 +62,5 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo -e "\nDone!\n"
-echo -e "\nBase System installed!\n"
-echo -e "\nSunOS Installer v2021.03 (v4.0)!\n"
+echo -e "\nBase OS installed!\n"
+echo -e "\nSunOS Installer v2021.04 (v5.0)!\n"
