@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #-------------------------------------------------------------------------
 #  Sun/OS Installer and Post-Installer for archiso and Sun/OS
-#   Version 2021.03   (C) 2021 Morales Research Corporation
+#   Version 2021.04   (C) 2021 Morales Research Corporation
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
@@ -40,7 +40,7 @@ PKGS=(
     'vim'                   # Terminal Editor
     'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
-    'fish'                  # The interactive Fish shell 
+    'tcsh'                  # The interactive tcsh shell
     # DISK UTILITIES ------------------------------------------------------
 
     'android-tools'         # ADB for Android
@@ -52,7 +52,6 @@ PKGS=(
     'gparted'               # Disk utility
     'gvfs-mtp'              # Read MTP Connected Systems
     'gvfs-smb'              # More File System Stuff
-    'nautilus-share'        # File Sharing in Nautilus
     'ntfs-3g'               # Open source implementation of NTFS file system
     'parted'                # Disk utility
     'samba'                 # Samba File Sharing
@@ -63,7 +62,6 @@ PKGS=(
     'flameshot'             # Screenshots
     'freerdp'               # RDP Connections
     'libvncserver'          # VNC Connections
-    'nautilus'              # Filesystem browser
     'remmina'               # Remote Connection
     'veracrypt'             # Disc encryption utility
     'variety'               # Wallpaper changer
