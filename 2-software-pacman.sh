@@ -5,7 +5,7 @@
 #-------------------------------------------------------------------------
 
 echo -e "\nINSTALLING SOFTWARE\n"
-echo -e"\nDetected Base System for Sun/OS \n"
+echo -e"\nDetected Base OS for Sun/OS Linux\n"
 
 PKGS=(
 
