@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Version 2021.03
+# Version 2021.04
 #
 # Created by Abdon Morales
 # (C) 2021 Morales Research Corporation 
 # sun-aip.sh file
 # For Sun Systems ---> i386 and amd64
 #
-echo "Sun-AIP v4.0.0  (C) 2021 Morales Research Corporation "
+echo "Sun-AIP v5.0.0  (C) 2021 Morales Research Corporation "
 #
 # text formatting codes
 # source https://github.com/nbros652/LUKS-guided-manual-partitioning/blob/master/LGMP.sh
