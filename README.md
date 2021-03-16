@@ -9,7 +9,7 @@ This README contains the steps to do the install and configure a fully-functiona
 
 ## Sun/OS Linux ISO
 To get the Sun/OS ISO please go to the following website:
-https://gitlab.com/Server2356/Sun-OS
+https://gitlab.com/morales-research-corporation/sunos-linux/Sun-OS
 
 ---
 ## Advanced
